@@ -30,6 +30,13 @@
             {
               "client_id": "19012932592-h1ogjdou39m815p18lsfneenm65feg5g.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "19012932592-j7uqmfpdpn74o7294h104ms08ennp4is.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ultaChatri"
+              }
             }
           ]
         }

@@ -348,7 +348,7 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -364,6 +364,8 @@ class MyApp extends StatelessWidget {
 }
 
 class RainStatusScreen extends StatefulWidget {
+  const RainStatusScreen({super.key});
+
   @override
   RainStatusScreenState createState() => RainStatusScreenState();
 }
@@ -444,7 +446,7 @@ class RainStatusScreenState extends State<RainStatusScreen> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text('Notifications'),
-          content: Container(
+          content: SizedBox(
             width: double.maxFinite,
             child: ListView.builder(
               shrinkWrap: true,
@@ -475,21 +477,28 @@ class RainStatusScreenState extends State<RainStatusScreen> {
       appBar: AppBar(
         title: Text(
           'UltaChatri',
-          style: TextStyle(color: Colors.yellowAccent), // App name color
+          style: TextStyle(color: Colors.white), // App name color
         ),
-        leading: Image.asset('assets/logo.jpeg'), // Your logo here
-        backgroundColor: Colors.deepPurpleAccent, // Changed app bar color
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 8.0), // Add padding on the left side
+          child: SizedBox(
+            width: 40, // Adjust the width to decrease the size of the logo
+            height: 40, // Adjust the height to decrease the size of the logo
+            child: Image.asset('assets/logo.jpeg'), // Your logo here
+          ),
+        ),
+        backgroundColor: Colors.purpleAccent[700], // Changed app bar color
         actions: [
           IconButton(
-            icon: AnimatedIcon(
-              icon: AnimatedIcons.menu_close,
-              progress: AlwaysStoppedAnimation(1.0),
-              color: Colors.yellow,
+            icon: Icon(
+              Icons.notifications_active, // Changed to notification icon
+              color: Colors.blue[900], // Icon color
             ),
             onPressed: showNotifications, // Show notifications on click
           ),
         ],
       ),
+
       body: Container(
         // Background changes based on rainStatus
         decoration: BoxDecoration(
@@ -514,7 +523,7 @@ class RainStatusScreenState extends State<RainStatusScreen> {
               ),
               SizedBox(height: 20),
               isRaining
-                  ? Container(
+                  ? SizedBox(
                 height: 200,
                 child: FlareActor(
                   "assets/rain_animation.flr", // Rain animation

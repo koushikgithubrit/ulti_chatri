@@ -45,8 +45,8 @@ flutter {
 
 
 dependencies {
-    implementation platform('com.google.firebase:firebase-bom:33.3.0')
-    implementation 'com.google.firebase:firebase-messaging:24.0.1'
+    implementation platform('com.google.firebase:firebase-bom:33.4.0')
+    implementation 'com.google.firebase:firebase-messaging:24.0.2'
     implementation 'com.google.firebase:firebase-installations:18.0.0'
     implementation 'com.google.firebase:firebase-analytics'
 }

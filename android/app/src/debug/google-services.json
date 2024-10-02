@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "19012932592",
+    "firebase_url": "https://ultrachatri-default-rtdb.firebaseio.com",
+    "project_id": "ultrachatri",
+    "storage_bucket": "ultrachatri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19012932592:android:ea6d03237441620ca3c335",
+        "android_client_info": {
+          "package_name": "com.example.ulta_chatri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19012932592-h1ogjdou39m815p18lsfneenm65feg5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1-_n2ELYfBC9Rdgz-wzqoBGcMtjJLbcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19012932592-h1ogjdou39m815p18lsfneenm65feg5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
